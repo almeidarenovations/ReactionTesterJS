@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Reaction Timer</title>
+    <style type="text/css">
+        #shape {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+            position: relative;
+        }
+
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            max-height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1> Test Your Reactions!</h1>
+        <h3>Click on the shape as fast as you can to test your mouse reaction time.</h3>
+        <p style="font-weight: bold;"> Your time: <span id="timeTaken"></span></p>
+        <p style="font-weight: bold;"> Fastest time: <span id="fastestTime"></span></p>
+        <div onclick="sqaureClick()" id="shape"></div>
+    </div>
+</body>
+
+</html>
